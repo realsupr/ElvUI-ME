@@ -9,5 +9,4 @@
 	<Script file='clcret.lua' />
 	<Script file='clcprot.lua' />
 	<Script file='ace3.lua' />
-	<Script file='irf3.lua' />
 </Ui>

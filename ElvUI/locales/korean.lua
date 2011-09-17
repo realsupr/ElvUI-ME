@@ -240,7 +240,6 @@ if E.client == "koKR" then
 	L.hunter_content = "소환수의 만족도: 만족"
 	L.hunter_happy = "소환수의 만족도: 매우 만족"
 	
-	-- Tooltip item level locale
 	L.tooltip_itemlevel = "아이템 레벨"
 	L.tooltip_equip = " (착용)"
 	
