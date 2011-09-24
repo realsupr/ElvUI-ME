@@ -128,7 +128,7 @@ if C["skin"].embedright == "OmenRecount" then
 		Recount.MainWindow:SetPoint("BOTTOMRIGHT", ChatRPlaceHolder,"BOTTOMRIGHT", 0, 0)
 		Recount.db.profile.FrameStrata = "3-MEDIUM"
 		Recount.db.profile.MainWindowWidth = (((C["chat"].chatwidth - 4) / 2)*E.ResScale)
-		Recount.db.profile.MainWindow.RowHeight = 12
+		--Recount.db.profile.MainWindow.RowHeight = 12
 		Recount.db.profile.MainWindow.ShowScrollbar = false
 		Recount.db.profile.MainWindow.HideTotalBar = false
 		Recount.db.profile.Locked = true
