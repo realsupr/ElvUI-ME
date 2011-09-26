@@ -5,51 +5,26 @@ if not IsAddOnLoaded("Recount") or not C["skin"].recount == true then return end
 local Recount = _G.Recount
 
 local function SkinFrame(frame)
-	if (E.screenwidth / E.screenheight) == 1.6 then
-		frame.bgMain = CreateFrame("Frame", nil, frame)
-		frame.bgMain:SetTemplate("Transparent")
-		frame.bgMain:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT")
-		frame.bgMain:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT")
-		frame.bgMain:SetPoint("TOP", frame, "TOP", 0, -27)
-		frame.bgMain:SetFrameLevel(frame:GetFrameLevel())
-	
-		frame.bgTitle = CreateFrame('Frame', nil, frame)
-		frame.bgTitle:SetTemplate('Default', true)
-		frame.bgTitle:Point("TOPRIGHT", frame, "TOPRIGHT", 0, -10)
-		frame.bgTitle:Point("TOPLEFT", frame, "TOPLEFT", 0, -7)
-		frame.bgTitle:Point("BOTTOM", frame, "TOP", 0, -26.5)
-		frame.bgTitle.tex:SetVertexColor(unpack(C['media'].bordercolor))
-		frame.bgTitle:SetFrameLevel(frame:GetFrameLevel())
-		frame.Title:SetPoint("TOPLEFT",frame.bgTitle,"TOPLEFT",6,-4)
-	
-		frame.CloseButton:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -1, -6)
-		E.SkinCloseButton(frame.CloseButton)
-		E.SkinScrollBar(Recount_MainWindow_ScrollBarScrollBar)
-		--/run Recount_MainWindow.RightButton:Hide()
-		frame:SetBackdrop(nil)
-	else
-		frame.bgMain = CreateFrame("Frame", nil, frame)
-		frame.bgMain:SetTemplate("Transparent")
-		frame.bgMain:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT")
-		frame.bgMain:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT")
-		frame.bgMain:SetPoint("TOP", frame, "TOP", 0, -27)
-		frame.bgMain:SetFrameLevel(frame:GetFrameLevel())
-	
-		frame.bgTitle = CreateFrame('Frame', nil, frame)
-		frame.bgTitle:SetTemplate('Default', true)
-		frame.bgTitle:Point("TOPRIGHT", frame, "TOPRIGHT", 0, -10)
-		frame.bgTitle:Point("TOPLEFT", frame, "TOPLEFT", 0, -7)
-		frame.bgTitle:Point("BOTTOM", frame, "TOP", 0, -26)
-		frame.bgTitle.tex:SetVertexColor(unpack(C['media'].bordercolor))
-		frame.bgTitle:SetFrameLevel(frame:GetFrameLevel())
-		frame.Title:SetPoint("TOPLEFT",frame.bgTitle,"TOPLEFT",6,-4)
-		
-		frame.CloseButton:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -1, -6)
-		E.SkinCloseButton(frame.CloseButton)
-		E.SkinScrollBar(Recount_MainWindow_ScrollBarScrollBar)
-		--/run Recount_MainWindow.RightButton:Hide()
-		frame:SetBackdrop(nil)
-	end
+	frame.bgMain = CreateFrame("Frame", nil, frame)
+	frame.bgMain:SetTemplate("Transparent")
+	frame.bgMain:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT")
+	frame.bgMain:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT")
+	frame.bgMain:SetPoint("TOP", frame, "TOP", 0, -7)
+	frame.bgMain:SetFrameLevel(frame:GetFrameLevel())
+	--[[
+	frame.bgTitle = CreateFrame('Frame', nil, frame)
+	frame.bgTitle:SetTemplate('Transparent', true)
+	frame.bgTitle:Point("TOPRIGHT", frame, "TOPRIGHT", 0, -10)
+	frame.bgTitle:Point("TOPLEFT", frame, "TOPLEFT", 0, -9)
+	frame.bgTitle:Point("BOTTOM", frame, "TOP", 0, -29)
+	frame.bgTitle.tex:SetVertexColor(unpack(C['media'].bordercolor))
+	frame.bgTitle:SetFrameLevel(frame:GetFrameLevel())
+	]]
+	frame.CloseButton:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -1, -9)
+	--E.SkinCloseButton(frame.CloseButton)
+	E.SkinScrollBar(Recount_MainWindow_ScrollBarScrollBar)
+	--/run Recount_MainWindow.RightButton:Hide()
+	frame:SetBackdrop(nil)
 end
 
 -- Override bar textures
