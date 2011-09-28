@@ -22,7 +22,7 @@ local function SkinFrame(frame)
 	]]
 	frame.CloseButton:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -1, -9)
 	--E.SkinCloseButton(frame.CloseButton)
-	E.SkinScrollBar(Recount_MainWindow_ScrollBarScrollBar)
+	--E.SkinScrollBar(Recount_MainWindow_ScrollBarScrollBar)
 	--/run Recount_MainWindow.RightButton:Hide()
 	frame:SetBackdrop(nil)
 end
