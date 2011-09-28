@@ -440,7 +440,8 @@ L["Tooltip"] = "툴팁 (Tooltip)"
 		L["Display if anyone in your party/raid is targetting the tooltip unit"] = "툴팁 유닛을 대상으로 잡고있는 파티원, 공격대원을 표시"
 	L["Item Level"] = "착용 아이템 레벨"
 		L["Display Player's item level"] = "대상 플레이어의 착용 아이템 레벨을 툴팁에 표시함"
-
+	L["Talent"] = "대상의 특성"
+		L["Display Player's Talent"] = "대상의 특성을 표시"
 --External Addons
 L["Skins"] = "스킨 (Skins)"
 	L["Enable/disable skinning of the entire BlizzardUI."] = "블리자드 기본 UI 전체에 스킨 활성화/비활성화"

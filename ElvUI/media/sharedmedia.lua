@@ -12,6 +12,7 @@ LSM:Register("font", "ElvUI Pixel", [[Interface\AddOns\ElvUI\media\fonts\Homespu
 LSM:Register("font","ElvUI Combat", [[Interface\AddOns\ElvUI\media\fonts\Action_Man.ttf]], 255)
 LSM:Register("font","ElvUI Alt-Combat", [[Interface\AddOns\ElvUI\media\fonts\DieDieDie.ttf]], 255)
 LSM:Register("font","ElvUI Alt-Combat-2", [[Interface\AddOns\ElvUI\media\fonts\Motor_Oil_1937_M54.ttf]], 255)
+LSM:Register("font","Tukui Unitframe Font", [[Interface\AddOns\ElvUI\media\fonts\uf_font.ttf]], 255)
 LSM:Register("sound","ElvUI Warning", [[Interface\AddOns\ElvUI\media\sounds\warning.mp3]])
 LSM:Register("sound","ElvUI Whisper", [[Interface\AddOns\ElvUI\media\sounds\whisper.mp3]])
 LSM:Register("sound","ElvUI SpecWarn", [[Interface\AddOns\ElvUI\media\sounds\specwarn.mp3]])

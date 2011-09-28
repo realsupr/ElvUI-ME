@@ -2774,6 +2774,12 @@ function ElvuiConfig.GenerateOptionsInternal()
 								name = L["Item Level"],
 								desc = L["Display Player's item level"],								
 							},
+							showtalent = {
+								order = 10,
+								type = "toggle",
+								name = L["Talent"],
+								desc = L["Display Player's Talent"],
+							},
 						},
 					},
 				},

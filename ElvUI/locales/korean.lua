@@ -125,6 +125,8 @@ if E.client == "koKR" then
 	L.unitframes_disconnected = "연결끊김"
  
 	L.tooltip_count = "개수"
+	L.tooltip_notalents = "특성 없음"
+	L.tooltip_loading = "불러오는 중"
 
 	L.bags_noslots = "추가 슬롯을 구매할 수 없습니다!"
 	L.bags_need_purchase = "은행 슬롯을 구매하셔야 합니다!"

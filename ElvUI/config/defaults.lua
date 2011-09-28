@@ -333,6 +333,7 @@ DB["tooltip"] = {
 	["itemid"] = false,						--display itemid on item tooltips 
 	["whotargetting"] = true,				--show who is targetting the unit (in raid or party)
 	["itemlevel"] = true,					--show player's item level
+	["showtalent"] = true,					--show player's talent
 }
 
 DB["others"] = {
