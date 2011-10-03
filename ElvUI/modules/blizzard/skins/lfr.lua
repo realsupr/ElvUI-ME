@@ -1,6 +1,7 @@
 local E, C, L, DB = unpack(select(2, ...)) -- Import Functions/Constants, Config, Locales
 if C["skin"].enable ~= true or C["skin"].lfr ~= true then return end
 
+
 local function LoadSkin()
 	local buttons = {
 	  "LFRQueueFrameFindGroupButton",
@@ -11,7 +12,11 @@ local function LoadSkin()
 	}
 
 	LFRParentFrame:StripTextures()
-	LFRParentFrame:SetTemplate("Transparent")
+	
+	if not E.IsPTRVersion() then
+		LFRParentFrame:SetTemplate("Transparent")
+	end
+	
 	LFRQueueFrame:StripTextures()
 	LFRBrowseFrame:StripTextures()
 
